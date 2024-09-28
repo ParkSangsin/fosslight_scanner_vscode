@@ -1,12 +1,12 @@
 {
-  "name": "fosslight-scanner-new-testing",
+  "name": "fosslight-scanner-sangsin-testing",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/fosslight/fosslight_vscode_extension.git"
   },
   "homepage": "https://fosslight.org",
-  "displayName": "FOSSLight Scanner new testing",
+  "displayName": "FOSSLight Scanner sangsin testing",
   "publisher": "persi",
   "description": "A VSCode Extension made for the convenient use of FOSSLight Scanner",
   "icon": "foss_logo.png",
