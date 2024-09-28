@@ -58,7 +58,7 @@ class SystemExecuter {
     try {
       if (arg) {
         const { stderr: venvError } = await execPromise(
-          `python -m venv ${this.venvPath}`
+          `${this.pythonPath} python -m venv ${this.venvPath}`
         );
         if (venvError) {
           console.error("Create venv failed: " + venvError);
