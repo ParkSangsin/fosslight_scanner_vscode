@@ -58,7 +58,7 @@ class SystemExecuter {
     try {
       if (arg) {
         const { stderr: venvError } = await execPromise(
-          `${this.pythonPath} python -m venv ${this.venvPath}`
+          `python -m venv ${this.venvPath}`
         );
         if (venvError) {
           console.error("Create venv failed: " + venvError);
@@ -67,7 +67,7 @@ class SystemExecuter {
       }
 
       const { stderr: pipError } = await execPromise(
-        `${this.pythonPath} -m pip install --upgrade pip`
+        `pip install --upgrade pip`
       );
       if (pipError) {
         console.error("pip upgrade failed: " + pipError);
@@ -75,7 +75,7 @@ class SystemExecuter {
       }
 
       const { stderr: installError } = await execPromise(
-        `${this.pythonPath} -m pip install fosslight_scanner`
+        `pip install fosslight_scanner`
       );
       if (installError) {
         console.error("Install fosslight scanner failed: " + installError);
